@@ -1,6 +1,6 @@
 ---
 name: spreadsheet-formatting
-description: "Build, restyle, or audit Google Sheets workbooks so a human can read, scan, change and trust them: header-only frozen rows, one line per cell, merges only for group headers, numbers right and text left, consistent number formats, one documented colour key, and every number owned: observations shown as data, assumptions styled as inputs, everything derived as formulas, anything unprovable flagged unverified. Use when the user asks to make a spreadsheet readable, consistent, presentable or user-friendly, to fix freeze panes, paragraphs in cells, hardcoded numbers or inconsistent formatting, to apply a house style through the Sheets API or gws CLI, or to audit a sheet's formatting. Not for choosing the analysis or metrics, data cleaning or statistics, chart or dashboard design outside the grid, or HTML/PDF report styling."
+description: "Build, restyle, or audit Google Sheets (and Excel) workbooks so a human can read, scan, change and trust them: header-only frozen rows, one line per cell, merges only for group headers, numbers right and text left, consistent number formats, one documented colour key, and every number owned: observations shown as data, assumptions styled as inputs, everything derived as formulas, anything unprovable flagged unverified. Use when the user asks to make a spreadsheet readable, consistent, presentable or user-friendly, to fix freeze panes, paragraphs in cells, hardcoded numbers or inconsistent formatting, to apply a house style through the Sheets API or gws CLI, or to audit a sheet's formatting. Not for choosing the analysis or metrics, data cleaning or statistics, chart or dashboard design outside the grid, or HTML/PDF report styling."
 metadata:
   short-description: "Make spreadsheets readable, consistent and formula-driven"
 ---
@@ -22,6 +22,11 @@ addresses and applied only when the user approves that list.
 The reader's complaints this skill exists to end: five frozen rows eating the
 screen, paragraphs typed into single cells, formatting that differs from tab
 to tab, and numbers hard-coded where a formula belongs.
+
+The doctrine applies to Excel as well, but the recipes below are Sheets API
+shapes; an Excel workbook needs its own execution route (a file library such
+as openpyxl for values and formatting, and the Excel application itself for
+recalculation and the rendered look), and the same look-before-done rule.
 
 This is a prompt-only skill. It ships doctrine, a concrete house style, and
 API request shapes; it ships no scripts or runners.
