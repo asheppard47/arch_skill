@@ -202,11 +202,11 @@ Claude Code, and Gemini.
 
 ## Docs Map
 
-- `README.md` for install targets, supported tools, and the current skill
+- [README.md](README.md) for install targets, supported tools, and the current skill
   inventory.
 - `CLAUDE.md` as a thin Claude Code shim that imports `AGENTS.md`; do not
   duplicate repo rules there.
-- `docs/arch_skill_usage_guide.md` for workflow selection and intended usage.
+- [docs/arch_skill_usage_guide.md](docs/arch_skill_usage_guide.md) for workflow selection and intended usage.
 - `skills/<slug>/SKILL.md` for the runtime contract of a specific shipped
   skill.
 - `vendor/cursor/plugins/cursor-team-kit/` for the vendored MIT Cursor Team Kit
